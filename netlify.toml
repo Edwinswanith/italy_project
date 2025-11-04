@@ -1,7 +1,7 @@
 [build]
-  base = "frontend"            # 👈 where your Vite project lives
+  base = "/"            # 👈 where your Vite project lives
   command = "npm run build"    # 👈 or "yarn build" if using Yarn
-  publish = "frontend/dist"    # 👈 Vite outputs build files here by default
+  publish = "/dist"    # 👈 Vite outputs build files here by default
 
 [build.environment]
   NODE_VERSION = "20"          # ensures consistent Node.js runtime
