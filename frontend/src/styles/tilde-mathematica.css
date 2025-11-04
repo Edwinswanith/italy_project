@@ -1,0 +1,993 @@
+/* Tilde Mathematica Component Styles */
+
+/* Main Container */
+.tilde-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+  color: white;
+}
+
+/* Background Effects */
+.tilde-bg-effects {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+.tilde-bg-effect-1 {
+  position: absolute;
+  top: -5rem;
+  right: -10%;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: rgba(94, 132, 162, 0.2);
+  filter: blur(3rem);
+}
+
+.tilde-bg-effect-2 {
+  position: absolute;
+  bottom: -15%;
+  left: -5%;
+  height: 28rem;
+  width: 28rem;
+  border-radius: 50%;
+  background-color: rgba(223, 160, 30, 0.15);
+  filter: blur(140px);
+}
+
+/* Content Container */
+.tilde-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+/* Header Styles */
+.tilde-header {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #1B4469;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 0 40px 120px rgba(8, 47, 73, 0.4);
+  backdrop-filter: blur(3rem);
+}
+
+.tilde-header-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1.6fr 1fr;
+}
+
+/* Logo Section */
+.tilde-logo-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tilde-logo {
+  max-height: 60px;
+  max-width: 200px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tilde-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tilde-logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  min-width: 200px;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tilde-logo-placeholder:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+}
+
+.tilde-logo-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tilde-upload-icon {
+  width: 24px;
+  height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tilde-logo-upload:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tilde-logo-upload:hover .tilde-upload-icon {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Platform Badge */
+.tilde-platform-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+  padding: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: white;
+  backdrop-filter: blur(4px);
+}
+
+/* Main Title */
+.tilde-title {
+  margin-top: 1rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.8));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .tilde-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* Description */
+.tilde-description {
+  margin-top: 1rem;
+  max-width: 32rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (min-width: 768px) {
+  .tilde-description {
+    font-size: 1.125rem;
+  }
+}
+
+/* Feature Tags */
+.tilde-features {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.tilde-feature-tag {
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.1));
+  padding: 0.75rem 2rem;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s;
+  letter-spacing: 0.05em;
+}
+
+.tilde-feature-tag:hover {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.15));
+}
+
+/* Live Snapshot Panel */
+.tilde-snapshot {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2rem);
+}
+
+.tilde-snapshot-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.tilde-snapshot-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.tilde-snapshot-item {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
+  padding: 1.25rem;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s;
+}
+
+.tilde-snapshot-item:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.12));
+}
+
+.tilde-snapshot-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.tilde-snapshot-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.tilde-snapshot-description {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Tab Navigation */
+.tilde-tab-nav {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tilde-tab-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #1B4469;
+  padding: 0.5rem;
+  backdrop-filter: blur(2rem);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+.tilde-tab-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.tilde-tab-button.active {
+  background: linear-gradient(to right, #408BCA, #5E84A2);
+  color: white;
+  box-shadow: 0 4px 16px rgba(64, 139, 202, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.tilde-tab-button:not(.active) {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tilde-tab-button:not(.active):hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+/* Content Area */
+.tilde-content-area {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  min-height: calc(100vh - 300px);
+  overflow-y: auto;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+/* Card Components */
+.tilde-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #1B4469;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2rem);
+  margin-bottom: 1.5rem;
+}
+
+.tilde-card.elevated {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #1B4469;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(2rem);
+}
+
+.tilde-card.glass {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #1B4469;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3rem);
+}
+
+/* Metric Cards */
+.tilde-metric-card {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tilde-metric-card.default {
+  background: #1B4469;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.tilde-metric-card.primary {
+  background: #1B4469;
+  border-color: rgba(64, 139, 202, 0.3);
+  color: white;
+}
+
+.tilde-metric-card.secondary {
+  background: #1B4469;
+  border-color: rgba(94, 132, 162, 0.3);
+  color: white;
+}
+
+.tilde-metric-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.tilde-metric-value {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.tilde-metric-unit {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tilde-metric-description {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Form Controls */
+.tilde-input {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  outline: none;
+  transition: all 0.3s;
+}
+
+.tilde-input:focus {
+  border-color: #408BCA;
+  box-shadow: 0 0 0 2px rgba(64, 139, 202, 0.2);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.12));
+}
+
+.tilde-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Slider Styles */
+.tilde-slider {
+  height: 0.5rem;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.tilde-slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  background: #408BCA;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 1), 0 0 0 5px rgba(28, 94, 142, 1);
+  outline: none;
+}
+
+.tilde-slider::-moz-range-thumb {
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  background: #408BCA;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 1), 0 0 0 5px rgba(28, 94, 142, 1);
+  outline: none;
+  border: none;
+}
+
+/* Button Styles */
+.tilde-button {
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.25rem;
+  font-family: monospace;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.tilde-button.primary {
+  background: linear-gradient(to right, #408BCA, #5E84A2);
+  color: white;
+  box-shadow: 0 4px 16px rgba(64, 139, 202, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.tilde-button.secondary {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.tilde-button.secondary:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.08));
+  color: white;
+}
+
+/* Preset Buttons */
+.tilde-preset-button {
+  border-radius: 0.75rem;
+  background: linear-gradient(to right, #408BCA, #5E84A2);
+  padding: 1rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  backdrop-filter: blur(4px);
+}
+
+.tilde-preset-button:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+/* Footer */
+.tilde-footer {
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.tilde-footer-content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: white;
+  background-color: #1B4469;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tilde-header-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tilde-snapshot-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tilde-features {
+    gap: 1rem;
+  }
+  
+  .tilde-feature-tag {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Utility Classes */
+.tilde-text-center {
+  text-align: center;
+}
+
+.tilde-text-white {
+  color: white;
+}
+
+.tilde-text-white-80 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.tilde-text-white-70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tilde-text-white-60 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tilde-font-bold {
+  font-weight: 700;
+}
+
+.tilde-font-semibold {
+  font-weight: 600;
+}
+
+.tilde-font-medium {
+  font-weight: 500;
+}
+
+.tilde-font-mono {
+  font-family: monospace;
+}
+
+.tilde-tracking-wide {
+  letter-spacing: 0.05em;
+}
+
+.tilde-tracking-wider {
+  letter-spacing: 0.1em;
+}
+
+.tilde-uppercase {
+  text-transform: uppercase;
+}
+
+.tilde-rounded {
+  border-radius: 0.5rem;
+}
+
+.tilde-rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.tilde-rounded-xl {
+  border-radius: 1rem;
+}
+
+.tilde-rounded-2xl {
+  border-radius: 1rem;
+}
+
+.tilde-rounded-full {
+  border-radius: 9999px;
+}
+
+.tilde-shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tilde-shadow-lg {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.tilde-shadow-xl {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.tilde-shadow-2xl {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+}
+
+.tilde-backdrop-blur {
+  backdrop-filter: blur(4px);
+}
+
+.tilde-backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+}
+
+.tilde-backdrop-blur-md {
+  backdrop-filter: blur(8px);
+}
+
+.tilde-backdrop-blur-lg {
+  backdrop-filter: blur(12px);
+}
+
+.tilde-backdrop-blur-xl {
+  backdrop-filter: blur(16px);
+}
+
+.tilde-backdrop-blur-2xl {
+  backdrop-filter: blur(24px);
+}
+
+.tilde-backdrop-blur-3xl {
+  backdrop-filter: blur(32px);
+}
+
+.tilde-transition {
+  transition: all 0.3s;
+}
+
+.tilde-transition-all {
+  transition: all 0.3s;
+}
+
+.tilde-duration-300 {
+  transition-duration: 0.3s;
+}
+
+.tilde-hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.tilde-hover-scale-105:hover {
+  transform: scale(1.05);
+}
+
+/* Grid Layouts */
+.tilde-grid {
+  display: grid;
+}
+
+.tilde-grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.tilde-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tilde-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tilde-grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.tilde-gap-2 {
+  gap: 0.5rem;
+}
+
+.tilde-gap-3 {
+  gap: 0.75rem;
+}
+
+.tilde-gap-4 {
+  gap: 1rem;
+}
+
+.tilde-gap-6 {
+  gap: 1.5rem;
+}
+
+.tilde-gap-8 {
+  gap: 2rem;
+}
+
+.tilde-gap-y-8 {
+  row-gap: 1rem;
+}
+
+.tilde-gap-y-12 {
+  row-gap: 1.5rem;
+}
+
+.tilde-space-y-12 > * + * {
+  margin-top: 1.5rem;
+}
+
+.tilde-mb-12 {
+  margin-bottom: 1.5rem;
+}
+
+/* Flexbox */
+.tilde-flex {
+  display: flex;
+}
+
+.tilde-flex-col {
+  flex-direction: column;
+}
+
+.tilde-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.tilde-items-center {
+  align-items: center;
+}
+
+.tilde-justify-center {
+  justify-content: center;
+}
+
+.tilde-justify-between {
+  justify-content: space-between;
+}
+
+/* Spacing */
+.tilde-p-0 {
+  padding: 0;
+}
+
+.tilde-p-2 {
+  padding: 0.5rem;
+}
+
+.tilde-p-4 {
+  padding: 1rem;
+}
+
+.tilde-p-6 {
+  padding: 1.5rem;
+}
+
+.tilde-p-8 {
+  padding: 2rem;
+}
+
+.tilde-px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.tilde-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tilde-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.tilde-px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.tilde-py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.tilde-py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.tilde-py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.tilde-m-0 {
+  margin: 0;
+}
+
+.tilde-m-4 {
+  margin: 1rem;
+}
+
+.tilde-mt-4 {
+  margin-top: 1rem;
+}
+
+.tilde-mt-6 {
+  margin-top: 1.5rem;
+}
+
+.tilde-mt-8 {
+  margin-top: 2rem;
+}
+
+.tilde-mt-16 {
+  margin-top: 4rem;
+}
+
+.tilde-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.tilde-mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.tilde-mb-4 {
+  margin-bottom: 1rem;
+}
+
+.tilde-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.tilde-mb-8 {
+  margin-bottom: 2rem;
+}
+
+/* Sizing */
+.tilde-w-full {
+  width: 100%;
+}
+
+.tilde-w-screen {
+  width: 100vw;
+}
+
+.tilde-h-full {
+  height: 100%;
+}
+
+.tilde-h-screen {
+  height: 100vh;
+}
+
+.tilde-min-h-screen {
+  min-height: 100vh;
+}
+
+.tilde-max-w-full {
+  max-width: 100%;
+}
+
+.tilde-max-w-2xl {
+  max-width: 42rem;
+}
+
+.tilde-max-w-7xl {
+  max-width: 80rem;
+}
+
+/* Overflow */
+.tilde-overflow-hidden {
+  overflow: hidden;
+}
+
+.tilde-overflow-y-auto {
+  overflow-y: auto;
+}
+
+.tilde-overflow-x-auto {
+  overflow-x: auto;
+}
+
+/* Position */
+.tilde-relative {
+  position: relative;
+}
+
+.tilde-absolute {
+  position: absolute;
+}
+
+.tilde-inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.tilde-z-10 {
+  z-index: 10;
+}
+
+.tilde-z-20 {
+  z-index: 20;
+}
+
+/* Display */
+.tilde-block {
+  display: block;
+}
+
+.tilde-inline-flex {
+  display: inline-flex;
+}
+
+.tilde-hidden {
+  display: none;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .md\\:tilde-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .md\\:tilde-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .md\\:tilde-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  .md\\:tilde-flex-row {
+    flex-direction: row;
+  }
+  
+  .md\\:tilde-text-lg {
+    font-size: 1.125rem;
+  }
+  
+  .md\\:tilde-text-xl {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\\:tilde-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .lg\\:tilde-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
