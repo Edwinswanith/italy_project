@@ -4,7 +4,7 @@ import { Chart as ChartJS, CategoryScale, LinearScale, LogarithmicScale, PointEl
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 import './styles/tilde-mathematica.css';
-import LogoImage from  '../../image_folder/Group-1.jpg';
+import LogoImage from  './assets/image_folder/Group-1.jpg';
 
 // KaTeX Stylesheet Loader
 const KaTeXStylesheetLoader = () => {
