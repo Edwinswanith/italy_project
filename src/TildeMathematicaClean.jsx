@@ -348,19 +348,19 @@ const InteractiveCalculator = ({
         {/* Parameter Values */}
         <div className="tilde-mb-8">
           <div className="tilde-flex tilde-flex-wrap tilde-justify-center tilde-gap-4">
-            <div className="tilde-rounded-full tilde-bg-gradient-to-r tilde-from-white-15 tilde-to-white-8 tilde-border tilde-border-white-20 tilde-px-6 tilde-py-3 tilde-text-sm tilde-text-white tilde-backdrop-blur-sm">
+            <div className="tilde-rounded-full tilde-bg-gradient-to-r tilde-from-white-15 tilde-to-white-8 tilde-border tilde-border-white-20 tilde-px-6 tilde-py-3 tilde-text-xl tilde-text-white tilde-backdrop-blur-sm">
               <span className="tilde-text-white-80">β =</span>
               <span className="tilde-ml-2 tilde-font-mono tilde-font-bold tilde-text-white">{beta.toFixed(4)}</span>
             </div>
-            <div className="tilde-rounded-full tilde-bg-gradient-to-r tilde-from-white-15 tilde-to-white-8 tilde-border tilde-border-white-20 tilde-px-6 tilde-py-3 tilde-text-sm tilde-text-white tilde-backdrop-blur-sm">
+            <div className="tilde-rounded-full tilde-bg-gradient-to-r tilde-from-white-15 tilde-to-white-8 tilde-border tilde-border-white-20 tilde-px-6 tilde-py-3 tilde-text-xl tilde-text-white tilde-backdrop-blur-sm">
               <span className="tilde-text-white-80">α<sub>add</sub> =</span>
               <span className="tilde-ml-2 tilde-font-mono tilde-font-bold tilde-text-white">{Math.ceil(-Math.log(0.5 * (beta - 1)) / Math.log(beta))}</span>
             </div>
-            <div className="tilde-rounded-full tilde-bg-gradient-to-r tilde-from-white-15 tilde-to-white-8 tilde-border tilde-border-white-20 tilde-px-6 tilde-py-3 tilde-text-sm tilde-text-white tilde-backdrop-blur-sm">
+            <div className="tilde-rounded-full tilde-bg-gradient-to-r tilde-from-white-15 tilde-to-white-8 tilde-border tilde-border-white-20 tilde-px-6 tilde-py-3 tilde-text-xl tilde-text-white tilde-backdrop-blur-sm">
               <span className="tilde-text-white-80">α<sub>carry</sub> =</span>
               <span className="tilde-ml-2 tilde-font-mono tilde-font-bold tilde-text-white">{Math.floor(-Math.log(0.5 * (beta - 1)) / Math.log(beta))}</span>
             </div>
-            <div className="tilde-rounded-full tilde-bg-gradient-to-r tilde-from-white-15 tilde-to-white-8 tilde-border tilde-border-white-20 tilde-px-6 tilde-py-3 tilde-text-sm tilde-text-white tilde-backdrop-blur-sm">
+            <div className="tilde-rounded-full tilde-bg-gradient-to-r tilde-from-white-15 tilde-to-white-8 tilde-border tilde-border-white-20 tilde-px-6 tilde-py-3 tilde-text-xl tilde-text-white tilde-backdrop-blur-sm">
               <span className="tilde-text-white-80">Δ% =</span>
               <span className="tilde-ml-2 tilde-font-mono tilde-font-bold tilde-text-white">{errorPercentage.toFixed(4)}%</span>
             </div>
@@ -371,16 +371,16 @@ const InteractiveCalculator = ({
 
         {/* Calculation Result */}
         <div className="tilde-rounded-2xl tilde-border tilde-border-white-20 tilde-bg-gradient-to-br tilde-from-white-15 tilde-to-white-8 tilde-p-8 tilde-shadow-lg tilde-backdrop-blur-sm">
-          <h3 className="tilde-mb-6 tilde-text-xl tilde-font-semibold tilde-text-white">RESULT:</h3>
+          <h3 className="tilde-mb-6 tilde-text-2xl tilde-font-semibold tilde-text-white">RESULT:</h3>
           <div className="tilde-text-center">
-            <div className="tilde-mb-6 tilde-text-3xl tilde-font-mono">
+            <div className="tilde-mb-6 tilde-text-5xl tilde-font-mono">
               <span className="tilde-font-bold tilde-text-408BCA">{operation}</span>
               <span className="tilde-text-white-80">(</span>
               <span className="tilde-font-bold tilde-text-white">{a}</span>
               <span className="tilde-text-white-80">, </span>
               <span className="tilde-font-bold tilde-text-white">{b}</span>
               <span className="tilde-text-white-80">)</span>
-              <span className="tilde-text-4xl tilde-font-bold tilde-text-DFA01E tilde-ml-4">{result}</span>
+              <span className="tilde-text-6xl tilde-font-bold tilde-text-DFA01E tilde-ml-4">{result}</span>
             </div>
           </div>
         </div>
@@ -1043,77 +1043,26 @@ export default function TildeMathematica() {
         <div className="tilde-bg-effect-2"></div>
       </div>
 
-      <div className="tilde-content">
-        <header className="tilde-header">
-          <div className="tilde-header-grid">
-            <div>
-              {/* Logo Section */}
-              <img
-                src={LogoImage}
-                alt="Tilde Platform Logo"
-                className="tilde-logo"
-                loading="eager"
-                width={200}
-                height={60}
-              />
-              <br />
-
-              <span className="tilde-platform-badge">
-                Tilde Platform
-              </span>
-              <p className="tilde-description">
-                Universal numerical computing platform for efficient computation across AI/ML, IoT, and precision domains.
-                Explore a cohesive toolkit for analysing β-driven arithmetic, validating hardware savings, and generating reference material.
-              </p>
-
-              <div className="tilde-features">
-                <span className="tilde-feature-tag">
-                  Adaptive numeric primitives
-                </span>
-                <span className="tilde-feature-tag">
-                  Hardware-aware insights
-                </span>
-                <span className="tilde-feature-tag">
-                  Interactive experimentation
-                </span>
-              </div>
-            </div>
-
-            <div className="tilde-snapshot">
-              <h2 className="tilde-snapshot-title">
-                Live Snapshot
-              </h2>
-              <div className="tilde-snapshot-grid">
-                <div className="tilde-snapshot-item">
-                  <p className="tilde-snapshot-label">β value</p>
-                  <p className="tilde-snapshot-value">{beta.toFixed(4)}</p>
-                  <p className="tilde-snapshot-description">
-                    {beta >= EFFICIENCY_THRESHOLD ? 'Simplified mode' : 'Full LUT mode'}
-                  </p>
-                </div>
-                <div className="tilde-snapshot-item">
-                  <p className="tilde-snapshot-label">Bit width</p>
-                  <p className="tilde-snapshot-value">{bitWidth} bits</p>
-                  <p className="tilde-snapshot-description">Range 0 – {maxValue}</p>
-                </div>
-                <div className="tilde-snapshot-item">
-                  <p className="tilde-snapshot-label">Gate count</p>
-                  <p className="tilde-snapshot-value">{gateCount.total}</p>
-                  <p className="tilde-snapshot-description">Total logic gates</p>
-                </div>
-                <div className="tilde-snapshot-item">
-                  <p className="tilde-snapshot-label">Error Δ%</p>
-                  <p className="tilde-snapshot-value">{errorPercentage.toFixed(1)}%</p>
-                  <p className="tilde-snapshot-description">Relative accuracy envelope</p>
-                </div>
-              </div>
-            </div>
+      {/* Fixed Sidebar Navigation */}
+      <aside className="tilde-sidebar-fixed">
+        <div className="tilde-sidebar-content">
+          {/* Logo Section - Top of Sidebar */}
+          <div className="tilde-logo-section">
+            <img
+              src={LogoImage}
+              alt="Tilde Platform Logo"
+              className="tilde-logo"
+              loading="eager"
+              width={200}
+              height={60}
+            />
+            <span className="tilde-platform-badge">
+              Tilde Platform
+            </span>
           </div>
-        </header>
 
-        {/* Tab Navigation */}
-        <div className="tilde-tab-nav">
-          <nav className="tilde-tab-container">
+          {/* Tab Navigation - Vertical */}
+          <nav className="tilde-tab-nav-vertical">
             {navigationTabs.map((tab) => (
               <TabButton
                 key={tab.id}
@@ -1124,51 +1073,102 @@ export default function TildeMathematica() {
               </TabButton>
             ))}
           </nav>
-        </div>
 
-        <div className="tilde-content-area">
-          {/* Tab Content */}
-          {activeTab === 'calculator' && (
-            <div className="tilde-space-y-12 px-4">
-              <div className="tilde-mb-12">
-                <InteractiveCalculator
-                  bitWidth={bitWidth}
-                  setBitWidth={setBitWidth}
-                  a={a}
-                  setA={setA}
-                  b={b}
-                  setB={setB}
-                  operation={operation}
-                  setOperation={setOperation}
-                  beta={beta}
-                  setBeta={setBeta}
-                  result={result}
-                  commonTerms={commonTerms}
-                  gateCount={gateCount}
-                  lutLength={lutLength}
-                  errorPercentage={errorPercentage}
-                  maxValue={maxValue}
-                />
-              </div>
+          {/* Description and Features */}
+          <div className="tilde-sidebar-footer">
+            <p className="tilde-description">
+              Universal numerical computing platform for efficient computation across AI/ML, IoT, and precision domains.
+            </p>
+            <div className="tilde-features">
+              <span className="tilde-feature-tag">
+                Adaptive numeric primitives
+              </span>
+              <span className="tilde-feature-tag">
+                Hardware-aware insights
+              </span>
+              <span className="tilde-feature-tag">
+                Interactive experimentation
+              </span>
             </div>
-          )}
-
-          {activeTab === 'beta' && (
-            <BetaAnalysisTab beta={beta} lutLength={lutLength} errorPercentage={errorPercentage} />
-          )}
-
-          {activeTab === 'hardware' && (
-            <HardwareTab beta={beta} bitWidth={bitWidth} lutLength={lutLength} gateCount={gateCount} />
-          )}
-
-          {activeTab === 'visualizations' && (
-            <VisualizationsTab beta={beta} operation={operation} a={a} />
-          )}
-
-          {activeTab === 'reference' && (
-            <ReferenceTab />
-          )}
+          </div>
         </div>
+      </aside>
+
+      <div className="tilde-content">
+        {/* Live Snapshot Bar - Moved to Top */}
+        <div className="tilde-snapshot-bar">
+          <div className="tilde-snapshot-bar-grid">
+            <div className="tilde-snapshot-item">
+              <p className="tilde-snapshot-label">β value</p>
+              <p className="tilde-snapshot-value">{beta.toFixed(4)}</p>
+              <p className="tilde-snapshot-description">
+                {beta >= EFFICIENCY_THRESHOLD ? 'Simplified mode' : 'Full LUT mode'}
+              </p>
+            </div>
+            <div className="tilde-snapshot-item">
+              <p className="tilde-snapshot-label">Bit width</p>
+              <p className="tilde-snapshot-value">{bitWidth} bits</p>
+              <p className="tilde-snapshot-description">Range 0 – {maxValue}</p>
+            </div>
+            <div className="tilde-snapshot-item">
+              <p className="tilde-snapshot-label">Gate count</p>
+              <p className="tilde-snapshot-value">{gateCount.total}</p>
+              <p className="tilde-snapshot-description">Total logic gates</p>
+            </div>
+            <div className="tilde-snapshot-item">
+              <p className="tilde-snapshot-label">Error Δ%</p>
+              <p className="tilde-snapshot-value">{errorPercentage.toFixed(1)}%</p>
+              <p className="tilde-snapshot-description">Relative accuracy envelope</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content Area */}
+        <main className="tilde-main-content">
+          <div className="tilde-content-area">
+            {/* Tab Content */}
+            {activeTab === 'calculator' && (
+              <div className="tilde-space-y-12 px-4">
+                <div className="tilde-mb-12">
+                  <InteractiveCalculator
+                    bitWidth={bitWidth}
+                    setBitWidth={setBitWidth}
+                    a={a}
+                    setA={setA}
+                    b={b}
+                    setB={setB}
+                    operation={operation}
+                    setOperation={setOperation}
+                    beta={beta}
+                    setBeta={setBeta}
+                    result={result}
+                    commonTerms={commonTerms}
+                    gateCount={gateCount}
+                    lutLength={lutLength}
+                    errorPercentage={errorPercentage}
+                    maxValue={maxValue}
+                  />
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'beta' && (
+              <BetaAnalysisTab beta={beta} lutLength={lutLength} errorPercentage={errorPercentage} />
+            )}
+
+            {activeTab === 'hardware' && (
+              <HardwareTab beta={beta} bitWidth={bitWidth} lutLength={lutLength} gateCount={gateCount} />
+            )}
+
+            {activeTab === 'visualizations' && (
+              <VisualizationsTab beta={beta} operation={operation} a={a} />
+            )}
+
+            {activeTab === 'reference' && (
+              <ReferenceTab />
+            )}
+          </div>
+        </main>
 
         {/* Footer */}
         <footer className="tilde-footer">
