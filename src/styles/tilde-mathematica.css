@@ -1,13 +1,41 @@
 /* Tilde Mathematica Component Styles */
 
+/* Import Brand Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;500;600;700&display=swap');
+
+/* CSS Variables for Brand Colors */
+:root {
+  /* Primary Color */
+  --tilde-primary: #1B4469;
+
+  /* Shades of Primary */
+  --tilde-primary-shade-1: #5E84A2;
+  --tilde-primary-shade-2: #90AFC4;
+  --tilde-primary-shade-3: #B7CFE2;
+  --tilde-primary-shade-4: #C9DEEE;
+  --tilde-primary-shade-5: #DCECF5;
+
+  /* Secondary Color */
+  --tilde-secondary: #408BCA;
+
+  /* Tertiary Color */
+  --tilde-tertiary: #DFA01E;
+
+  /* Font Families */
+  --tilde-font-heading: 'Russo One', sans-serif;
+  --tilde-font-body: 'Proxima Nova', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
 /* Main Container */
 .tilde-container {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--tilde-primary);
   color: white;
+  font-family: var(--tilde-font-body);
 }
 
 /* Background Effects */
@@ -56,7 +84,7 @@
   overflow: hidden;
   border-radius: 1.5rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: #1B4469;
+  background: var(--tilde-primary);
   padding: 1.5rem;
   margin: 1rem;
   box-shadow: 0 40px 120px rgba(8, 47, 73, 0.4);
@@ -156,6 +184,7 @@
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 1.1;
+  font-family: var(--tilde-font-heading);
   color: white;
   background: linear-gradient(to right, white, rgba(255, 255, 255, 0.8));
   background-clip: text;
@@ -282,7 +311,7 @@
   gap: 0.5rem;
   border-radius: 9999px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: #1B4469;
+  background: var(--tilde-primary);
   padding: 0.5rem;
   backdrop-filter: blur(2rem);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -304,7 +333,7 @@
 }
 
 .tilde-tab-button.active {
-  background: linear-gradient(to right, #408BCA, #5E84A2);
+  background: linear-gradient(to right, var(--tilde-secondary), var(--tilde-primary-shade-1));
   color: white;
   box-shadow: 0 4px 16px rgba(64, 139, 202, 0.3);
   backdrop-filter: blur(4px);
@@ -337,7 +366,7 @@
 .tilde-card {
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: #1B4469;
+  background: var(--tilde-primary);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2rem);
   margin-bottom: 1.5rem;
@@ -345,14 +374,14 @@
 
 .tilde-card.elevated {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background: #1B4469;
+  background: var(--tilde-primary);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(2rem);
 }
 
 .tilde-card.glass {
   border: 1px solid rgba(255, 255, 255, 0.25);
-  background: #1B4469;
+  background: var(--tilde-primary);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(3rem);
 }
@@ -367,19 +396,19 @@
 }
 
 .tilde-metric-card.default {
-  background: #1B4469;
+  background: var(--tilde-primary);
   border-color: rgba(255, 255, 255, 0.2);
   color: white;
 }
 
 .tilde-metric-card.primary {
-  background: #1B4469;
+  background: var(--tilde-primary);
   border-color: rgba(64, 139, 202, 0.3);
   color: white;
 }
 
 .tilde-metric-card.secondary {
-  background: #1B4469;
+  background: var(--tilde-primary);
   border-color: rgba(94, 132, 162, 0.3);
   color: white;
 }
@@ -425,7 +454,7 @@
 }
 
 .tilde-input:focus {
-  border-color: #408BCA;
+  border-color: var(--tilde-secondary);
   box-shadow: 0 0 0 2px rgba(64, 139, 202, 0.2);
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.12));
 }
@@ -450,7 +479,7 @@
   height: 1.25rem;
   width: 1.25rem;
   border-radius: 50%;
-  background: #408BCA;
+  background: var(--tilde-secondary);
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 1), 0 0 0 5px rgba(28, 94, 142, 1);
   outline: none;
 }
@@ -459,7 +488,7 @@
   height: 1.25rem;
   width: 1.25rem;
   border-radius: 50%;
-  background: #408BCA;
+  background: var(--tilde-secondary);
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 1), 0 0 0 5px rgba(28, 94, 142, 1);
   outline: none;
   border: none;
@@ -477,7 +506,7 @@
 }
 
 .tilde-button.primary {
-  background: linear-gradient(to right, #408BCA, #5E84A2);
+  background: linear-gradient(to right, var(--tilde-secondary), var(--tilde-primary-shade-1));
   color: white;
   box-shadow: 0 4px 16px rgba(64, 139, 202, 0.4);
   backdrop-filter: blur(4px);
@@ -498,7 +527,7 @@
 /* Preset Buttons */
 .tilde-preset-button {
   border-radius: 0.75rem;
-  background: linear-gradient(to right, #408BCA, #5E84A2);
+  background: linear-gradient(to right, var(--tilde-secondary), var(--tilde-primary-shade-1));
   padding: 1rem 1.5rem;
   font-size: 0.875rem;
   font-weight: 500;
@@ -531,7 +560,7 @@
   gap: 1.5rem;
   font-size: 0.875rem;
   color: white;
-  background-color: #1B4469;
+  background-color: var(--tilde-primary);
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -543,15 +572,15 @@
   .tilde-header-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .tilde-snapshot-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .tilde-features {
     gap: 1rem;
   }
-  
+
   .tilde-feature-tag {
     padding: 0.5rem 1rem;
   }
@@ -739,7 +768,7 @@
   row-gap: 1.5rem;
 }
 
-.tilde-space-y-12 > * + * {
+.tilde-space-y-12>*+* {
   margin-top: 1.5rem;
 }
 
@@ -960,23 +989,23 @@
   .md\\:tilde-grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
+
   .md\\:tilde-grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  
+
   .md\\:tilde-grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  
+
   .md\\:tilde-flex-row {
     flex-direction: row;
   }
-  
+
   .md\\:tilde-text-lg {
     font-size: 1.125rem;
   }
-  
+
   .md\\:tilde-text-xl {
     font-size: 1.25rem;
   }
@@ -986,8 +1015,250 @@
   .lg\\:tilde-grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
+
   .lg\\:tilde-grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+}
+
+/* Typography - Headings with Russo One */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.tilde-h1,
+.tilde-h2,
+.tilde-h3,
+.tilde-h4,
+.tilde-h5,
+.tilde-h6 {
+  font-family: var(--tilde-font-heading);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.tilde-text-xs {
+  font-size: 0.75rem;
+}
+
+.tilde-text-sm {
+  font-size: 0.875rem;
+}
+
+.tilde-text-base {
+  font-size: 1rem;
+}
+
+.tilde-text-lg {
+  font-size: 1.125rem;
+}
+
+.tilde-text-xl {
+  font-size: 1.25rem;
+}
+
+.tilde-text-2xl {
+  font-size: 1.5rem;
+}
+
+.tilde-text-3xl {
+  font-size: 1.875rem;
+}
+
+.tilde-text-4xl {
+  font-size: 2.25rem;
+}
+
+/* Brand Color Utilities */
+.tilde-bg-primary {
+  background-color: var(--tilde-primary);
+}
+
+.tilde-bg-primary-shade-1 {
+  background-color: var(--tilde-primary-shade-1);
+}
+
+.tilde-bg-primary-shade-2 {
+  background-color: var(--tilde-primary-shade-2);
+}
+
+.tilde-bg-primary-shade-3 {
+  background-color: var(--tilde-primary-shade-3);
+}
+
+.tilde-bg-secondary {
+  background-color: var(--tilde-secondary);
+}
+
+.tilde-bg-tertiary {
+  background-color: var(--tilde-tertiary);
+}
+
+.tilde-text-primary {
+  color: var(--tilde-primary);
+}
+
+.tilde-text-secondary {
+  color: var(--tilde-secondary);
+}
+
+.tilde-text-tertiary {
+  color: var(--tilde-tertiary);
+}
+
+.tilde-text-408BCA {
+  color: var(--tilde-secondary);
+}
+
+.tilde-text-DFA01E {
+  color: var(--tilde-tertiary);
+}
+
+.tilde-bg-408BCA {
+  background-color: var(--tilde-secondary);
+}
+
+.tilde-bg-DFA01E {
+  background-color: var(--tilde-tertiary);
+}
+
+.tilde-bg-1B4469 {
+  background-color: var(--tilde-primary);
+}
+
+.tilde-bg-1B4469-50 {
+  background-color: rgba(27, 68, 105, 0.5);
+}
+
+.tilde-bg-white-10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tilde-bg-white-15 {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.tilde-bg-white-20 {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tilde-bg-white-8 {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.tilde-bg-black-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tilde-border-white-10 {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.tilde-border-white-20 {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tilde-divide-white-10>*+* {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tilde-border-b {
+  border-bottom-width: 1px;
+}
+
+.tilde-border {
+  border-width: 1px;
+}
+
+/* Height utilities */
+.tilde-h-80 {
+  height: 20rem;
+}
+
+.tilde-h-3 {
+  height: 0.75rem;
+}
+
+.tilde-w-3 {
+  width: 0.75rem;
+}
+
+.tilde-w-24 {
+  width: 6rem;
+}
+
+/* Additional spacing */
+.tilde-space-y-2>*+* {
+  margin-top: 0.5rem;
+}
+
+.tilde-space-y-4>*+* {
+  margin-top: 1rem;
+}
+
+.tilde-space-y-6>*+* {
+  margin-top: 1.5rem;
+}
+
+.tilde-mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.tilde-mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.tilde-mb-4 {
+  margin-bottom: 1rem;
+}
+
+.tilde-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.tilde-mt-1 {
+  margin-top: 0.25rem;
+}
+
+.tilde-ml-2 {
+  margin-left: 0.5rem;
+}
+
+.tilde-ml-4 {
+  margin-left: 1rem;
+}
+
+.tilde-mr-2 {
+  margin-right: 0.5rem;
+}
+
+.tilde-my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tilde-pt-4 {
+  padding-top: 1rem;
+}
+
+.tilde-py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.tilde-py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.tilde-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tilde-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
